@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp"
+    android:id="@+id/mainContainer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/postHeading"
+            style="bold"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Heading"
+            android:textColor="@color/purple_500"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/postbyname"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="by Unknown User"
+            android:textColor="#808080"
+            android:layout_gravity="right"
+            />
+
+        <TextView
+            android:id="@+id/postBody"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:textSize="18dp"/>
+
+        <Button
+            android:id="@+id/postComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comments"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
