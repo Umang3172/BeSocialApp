@@ -30,9 +30,9 @@ public class Post extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_post, container, false);
 
-//        progressDialog= new ProgressDialog(getContext());
-//        progressDialog.setTitle("Loading Posts!!");
-//        progressDialog.show();
+        progressDialog= new ProgressDialog(getContext());
+        progressDialog.setTitle("Loading Posts!!");
+        progressDialog.show();
 
 
         //Toast.makeText(getContext(), "Worked", Toast.LENGTH_SHORT).show();
@@ -47,7 +47,7 @@ public class Post extends Fragment {
         public void onFetchData(List<gorestApiResponse> posts, String message) {
 
             showPost(posts);
-            //    progressDialog.dismiss();
+            progressDialog.dismiss();
         }
 
 
