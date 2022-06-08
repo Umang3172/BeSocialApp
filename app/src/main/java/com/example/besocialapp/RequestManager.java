@@ -20,9 +20,9 @@ import retrofit2.http.Query;
 public class RequestManager {
     Context context;
     Retrofit retrofit = new Retrofit.Builder()
-                            .baseUrl("https://gorest.co.in/public/v2/")
-                            .addConverterFactory(GsonConverterFactory.create())
-                            .build();
+            .baseUrl("https://gorest.co.in/public/v2/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build();
 
     public RequestManager(Context context) {
         this.context = context;
@@ -52,7 +52,7 @@ public class RequestManager {
                 public void onFailure(Call<gorestApiResponse> call, Throwable t) {
 
                     // Error, going in onFailure rather than onResponse
-
+                    Toast.makeText(context, "Failed", Toast.LENGTH_SHORT).show();
 
 
                     listener.onError("Failed");
